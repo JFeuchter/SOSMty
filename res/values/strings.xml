@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SOS MTY</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_perfil">Mi Perfil</string>
+    <string name="title_activity_personal">Perfil Personal</string>
+    <string name="title_activity_medica">Ficha Medica</string>
+    <string name="title_activity_mecanica">Ficha Mecanica</string>
+    <string name="title_activity_seguro_auto">Ficha Seguro de Auto</string>
+
+    <string-array name="mpos_servicios">
+        <item>Monterrey</item>
+        <item>San Pedro Garza García</item>
+        <item>San Nicolás de los Garza</item>
+        <item>Guadalupe</item>
+    </string-array>
+    <string-array name="menu_perfil">
+        <item>Perfil Personal</item>
+        <item>Ficha Médica</item>
+        <item>Ficha Mecánica</item>
+        <item>Seguro de Carro</item>
+    </string-array>
+    <string-array name="menu_configuracion">
+        <item>Botón Externo</item>
+        <item>Idioma</item>
+        <item>Configurar envio de datos</item>
+        <item>About S.O.S. MTY</item>
+    </string-array>
+
+    <!-- Ficha Personal -->
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="telefono_local">Teléfono Local</string>
+    <string name="celular">Celular</string>
+    <string name="fecha_nac">Fecha de Nacimiento</string>
+    <string name="edad">Edad</string>
+    <string name="direccion">Dirección</string>
+    <string name="municipio">Municipio</string>
+    <string name="sexo">Sexo</string>
+    <string name="personal_foto">Foto</string>
+
+    <!-- Ficha Médica -->
+    <string name="medica_titular">Nombre del Titular del Seguro</string>
+    <string name="medica_asegurado">Nombre del Asegurado</string>
+    <string name="medica_aseguradora">Aseguradora</string>
+    <string name="medica_poliza">Número de Póliza</string>
+    <string name="medica_vencimiento">Fecha de Vencimiento</string>
+    <string name="medica_sangre">Tipo de Sangre</string>
+    <string name="medica_alergias">Alergias y/o Padecimientos</string>
+
+    <!-- Ficha Mecanica -->
+    <string name="mecanica_titular">Nombre del Titular del Carro</string>
+    <string name="mecanica_marca">Marca</string>
+    <string name="mecanica_modelo">Modelo</string>
+    <string name="mecanica_yr">Año</string>
+    <string name="mecanica_color">Color</string>
+    <string name="mecanica_foto">Foto</string>
+    <string name="mecanica_placas">Placas</string>
+    <string name="mecanica_informacion">Información extra</string>
+
+    <!-- Ficha Seguro de Carro -->
+    <string name="seg_car_aseguradora">Aseguradora</string>
+    <string name="seg_car_titlar">Nombre del titular del Seguro</string>
+    <string name="seg_car_poliza">Numero de Póliza</string>
+
+    <string-array name="sexos">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string-array name="tipo_sangre">
+        <item>O-</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>AB-</item>
+        <item>AB+</item>
+    </string-array>
+    <string-array name="municipios">
+        <item>Abasolo</item>
+        <item>Agualeguas</item>
+        <item>Los Aldamas</item>
+        <item>Allende</item>
+        <item>Anáhuac</item>
+        <item>Apodaca</item>
+        <item>Aramberri</item>
+        <item>Benito Juárez</item>
+        <item>Bustamante</item>
+        <item>Cadereyta Jiménez</item>
+        <item>El Carmen</item>
+        <item>Cerralvo</item>
+        <item>Ciénega de Flores</item>
+        <item>China</item>
+        <item>Doctor Arroyo</item>
+        <item>Doctor Coss</item>
+        <item>Doctor González</item>
+        <item>Galeana</item>
+        <item>García</item>
+        <item>General Bravo</item>
+        <item>General Escobedo</item>
+        <item>General Terán</item>
+        <item>General Treviño</item>
+        <item>General Zaragoza</item>
+        <item>General Zuazua</item>
+        <item>Guadalupe</item>
+        <item>Los Herreras</item>
+        <item>Hidalgo</item>
+        <item>Higueras</item>
+        <item>Hualahuises</item>
+        <item>Iturbide</item>
+        <item>Lampazos de Naranjo</item>
+        <item>Linares</item>
+        <item>Marín</item>
+        <item>Melchor Ocampo</item>
+        <item>Mier y Noriega</item>
+        <item>Mina</item>
+        <item>Montemorelos</item>
+        <item>Monterrey</item>
+        <item>Parás</item>
+        <item>Pesquería</item>
+        <item>Los Ramones</item>
+        <item>Rayones</item>
+        <item>Sabinas Hidalgo</item>
+        <item>Salinas Victoria</item>
+        <item>San Nicolás de los Garza</item>
+        <item>San Pedro Garza García</item>
+        <item>Santa Catarina</item>
+        <item>Santiago</item>
+        <item>Vallecillo</item>
+        <item>Villaldama</item>
+    </string-array>
+
+    <string name="title_activity_configuracion">Configuración</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_contactos">Contactos</string>
+
+</resources>

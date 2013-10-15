@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Personal" >
+    
+<ScrollView 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_completo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/TextBox"
+         >
+    </EditText>
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TableRow
+    >
+
+	 <LinearLayout 
+    android:layout_width="0dp" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight=".60"
+    android:layout_margin="4dp"
+    >	
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono_local"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        style="@style/TextBox"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celular"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/celular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        style="@style/TextBox"
+         />
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_width="0dp" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight=".40"
+    android:layout_margin="4dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_personal_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personal_foto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+    android:layout_width="100dp" 
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    
+    android:id="@+id/pic_personal_foto"
+    android:background="#FFFFFF"
+      
+        >
+    </ImageView>
+    </LinearLayout>
+    </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_nac"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <DatePicker
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:spinnersShown="true" />
+
+<TableLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="2" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+ >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_span="2"
+                style="@style/TextBox" />
+
+            <Spinner
+                android:id="@+id/sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="#000000"
+                android:layout_span="2"
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+ >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direccion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="4" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+>
+
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                style="@style/TextBox"
+                android:layout_span="4" >
+
+            </EditText>
+
+
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow5"
+ >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/municipio"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+>
+
+
+
+            <Spinner
+                android:id="@+id/municipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="#000000"
+                android:layout_span="2" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnGuardarPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Guardar"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+</ScrollView>
+    <TableLayout 
+	    
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		
+		<TableRow
+			android:gravity="center"
+		>
+
+		<ImageView 
+        android:id="@+id/BtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home" />
+
+		<ImageView
+		    android:id="@+id/btnAmbulancia"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+
+		<ImageView
+        android:id="@+id/BtnContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactos" />
+
+		<ImageView
+		    android:id="@+id/ImageView01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			    
+		<ImageView
+        android:id="@+id/BtnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil" />
+
+		<ImageView
+		    android:id="@+id/ImageView02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ubicacion" />
+
+		<ImageView
+		    android:id="@+id/ImageView03"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/config" />
+			        
+			    </TableRow>
+			    </TableLayout>
+
+
+</LinearLayout>

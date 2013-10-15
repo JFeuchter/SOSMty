@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Medica" >
+    
+<ScrollView 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/txttitular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medica_titular"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edittitular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/TextBox"
+         >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtasegurado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medica_asegurado"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editasegurado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/TextBox"
+         />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+ >
+
+            <TextView
+                android:id="@+id/txtaseguradora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medica_aseguradora"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="1" />
+
+            <TextView
+                android:id="@+id/txtpoliza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medica_poliza"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_span="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2">
+
+            <EditText
+                android:id="@+id/editaseguradora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                style="@style/TextBox"
+                android:layout_span="1" >
+
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/editpoliza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                style="@style/TextBox"
+                android:inputType="textPersonName"
+                android:layout_span="1" />
+
+        </TableRow>
+    </TableLayout>
+    
+     <TextView
+         android:id="@+id/txtvencimiento"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/medica_vencimiento"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <DatePicker
+        android:id="@+id/vencimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:spinnersShown="true" />
+
+    <TextView
+        android:id="@+id/txtsangre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medica_sangre"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spsangre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:popupBackground="#000000" />
+
+    <TextView
+        android:id="@+id/txtalergias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medica_alergias"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editalergias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        style="@style/TextBox"
+         />
+
+
+
+    <Button
+        android:id="@+id/btnGuardarMedica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Guardar"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+</ScrollView>
+    <TableLayout 
+	    
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		
+		<TableRow
+			android:gravity="center"
+		>
+
+		<ImageView 
+        android:id="@+id/BtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home" />
+
+		<ImageView
+		    android:id="@+id/btnAmbulancia"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+
+		<ImageView
+        android:id="@+id/BtnContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactos" />
+
+		<ImageView
+		    android:id="@+id/ImageView01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			    
+		<ImageView
+        android:id="@+id/BtnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil" />
+
+		<ImageView
+		    android:id="@+id/ImageView02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ubicacion" />
+
+		<ImageView
+		    android:id="@+id/ImageView03"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/config" />
+			        
+			    </TableRow>
+			    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Perfil" >
+    
+
+    <ListView 
+    
+    android:id="@+id/lvconfiguracion"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:divider="#FFFFFF"
+    android:dividerHeight="1dp"
+    tools:context=".Perfil"
+    tools:listitem="@android:layout/simple_list_item_1"
+    android:layout_weight="1" >
+    
+
+</ListView>
+
+    <TableLayout 
+	    
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		
+		<TableRow
+			android:gravity="center"
+		>
+
+		<ImageView 
+        android:id="@+id/BtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home" />
+
+		<ImageView
+		    android:id="@+id/btnAmbulancia"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+
+		<ImageView
+        android:id="@+id/BtnContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactos" />
+
+		<ImageView
+		    android:id="@+id/ImageView01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			    
+		<ImageView
+        android:id="@+id/BtnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil" />
+
+		<ImageView
+		    android:id="@+id/ImageView02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ubicacion" />
+
+		<ImageView
+		    android:id="@+id/ImageView03"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/config" />
+			        
+			    </TableRow>
+			    </TableLayout>
+
+			    
+</LinearLayout>

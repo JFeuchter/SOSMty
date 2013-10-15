@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+    
+  	<EditText 
+    	android:id="@+id/EditText_Password" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="205dp" 
+    	android:layout_marginLeft="5dip"
+    	android:maxLength="15"
+    	android:inputType="textPassword"
+    	android:layout_marginTop="5dip"
+    	style="@style/TextBox">
+    </EditText>
+	<CheckBox
+        android:id="@+id/cb_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar contraseña"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="5dip"/>
+
+	
+ 	<LinearLayout
+ 	    
+    	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal">
+    	<Button
+       		android:layout_marginTop="4dp"
+        	android:id="@+id/btn_okPass"
+     		android:layout_width="95dp"
+        	android:layout_height="wrap_content"
+        	android:text="OK"
+        	android:layout_weight="1">
+    	</Button>
+    	<Button
+        	android:layout_marginTop="4dp"
+        	android:id="@+id/btn_cancelPass"
+     		android:layout_width="95dp"
+        	android:layout_height="wrap_content"
+        	android:text="Cancelar"
+			android:layout_weight="1">
+    	</Button>
+    </LinearLayout>
+</LinearLayout>
+ 

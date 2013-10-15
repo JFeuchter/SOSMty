@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Mecanica" >
+    
+<ScrollView 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/txt_mecanica_titular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_titular"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edit_mecanica_titular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/TextBox"
+         >
+    </EditText>
+    
+<TableLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+ 
+    <TableRow>
+     <TextView
+        android:id="@+id/txt_mecanica_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_marca"
+         android:layout_span="2"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+    <TextView
+        android:id="@+id/txt_mecanica_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_modelo"
+        android:layout_span="2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+
+    </TableRow>
+ 
+    <TableRow>
+
+       <EditText
+            android:id="@+id/edit_mecanica_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            style="@style/TextBox"
+            android:layout_span="2" >
+        </EditText>
+
+    <EditText
+        android:id="@+id/edit_mecanica_modelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/TextBox"
+        android:layout_span="2" />
+
+    </TableRow>
+ 
+    <TableRow>
+     <TextView
+        android:id="@+id/txt_mecanica_yr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_yr"
+        android:layout_span="2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txt_mecanica_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_color"
+        android:layout_span="2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    <TableRow>
+
+        <EditText
+            android:id="@+id/edit_mecanica_yr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            style="@style/TextBox"
+            android:layout_span="2" />
+
+    <EditText
+        android:id="@+id/edit_mecanica_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/TextBox"
+        android:layout_span="2" />
+
+    </TableRow>
+    <TableRow>
+    <TextView
+        android:id="@+id/txt_mecanica_placas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_placas"
+        android:layout_span="2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+    <TableRow>
+
+        <EditText
+            android:id="@+id/edit_mecanica_placas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            style="@style/TextBox"
+            android:layout_span="2" />
+
+
+    </TableRow>
+    <TableRow>
+<TextView
+        android:id="@+id/txt_mecanica_informacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_informacion"
+        android:layout_span="4"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    <TableRow>
+
+    <EditText
+        android:id="@+id/edit_mecanica_informacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/TextBox"
+        android:layout_span="4"
+         />
+
+    </TableRow>
+</TableLayout>
+    <TextView
+        android:id="@+id/txt_mecanica_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mecanica_foto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<ImageView
+    android:layout_width="100dp" 
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:id="@+id/pic_mecanica_foto"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    >
+    </ImageView>
+    
+
+        
+    <Button
+        android:id="@+id/btnGuardarMecanica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Guardar"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+</ScrollView>
+    <TableLayout 
+	    
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		
+		<TableRow
+			android:gravity="center"
+		>
+
+		<ImageView 
+        android:id="@+id/BtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home" />
+
+		<ImageView
+		    android:id="@+id/btnAmbulancia"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+
+		<ImageView
+        android:id="@+id/BtnContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactos" />
+
+		<ImageView
+		    android:id="@+id/ImageView01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			    
+		<ImageView
+        android:id="@+id/BtnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil" />
+
+		<ImageView
+		    android:id="@+id/ImageView02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ubicacion" />
+
+		<ImageView
+		    android:id="@+id/ImageView03"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/config" />
+			        
+			    </TableRow>
+			    </TableLayout>
+
+
+</LinearLayout>

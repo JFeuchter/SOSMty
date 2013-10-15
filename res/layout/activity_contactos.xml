@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Mecanica" >
+
+
+    
+<ScrollView 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+    <LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+<TableLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+ 
+    <TableRow>
+
+     <ImageButton
+         android:id="@+id/imageButton1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/contact_plus" />
+
+
+
+     <ImageButton
+         android:id="@+id/imageButton2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/content_remove" />
+
+     <ImageButton
+         android:id="@+id/imageButton3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/rating_important" />
+
+
+    </TableRow>
+    </TableLayout>
+        <TableRow
+            android:id="@+id/TableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#555555" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directorio de Contactos:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Spinner
+                android:id="@+id/sp_mpos_servicios"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </TableRow>
+    
+<TableLayout
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+</TableLayout>
+
+</LinearLayout>
+</ScrollView>
+    <TableLayout 
+	    
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	>
+		
+		<TableRow
+			android:gravity="center"
+		>
+
+		<ImageView 
+        android:id="@+id/BtnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home" />
+
+		<ImageView
+		    android:id="@+id/btnAmbulancia"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+
+		<ImageView
+        android:id="@+id/BtnContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactos" />
+
+		<ImageView
+		    android:id="@+id/ImageView01"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			    
+		<ImageView
+        android:id="@+id/BtnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perfil" />
+
+		<ImageView
+		    android:id="@+id/ImageView02"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ubicacion" />
+
+		<ImageView
+		    android:id="@+id/ImageView03"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/separador" />
+			        
+		<ImageView
+        android:id="@+id/BtnConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/config" />
+			        
+			    </TableRow>
+			    </TableLayout>
+
+
+</LinearLayout>
